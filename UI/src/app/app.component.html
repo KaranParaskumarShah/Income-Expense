@@ -1,1 +1,14 @@
-hello
+<page-header (onMenuClicked)="menuClicked = !menuClicked"></page-header>
+
+<mat-drawer-container >
+  <mat-drawer mode="side" [opened]="menuClicked">
+    <side-nav >
+
+    </side-nav>
+  </mat-drawer>
+
+  <main >
+    <router-outlet></router-outlet>
+  </main>
+
+</mat-drawer-container>

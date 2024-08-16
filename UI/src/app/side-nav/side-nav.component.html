@@ -1,0 +1,5 @@
+<mat-nav-list>
+   <a mat-list-item *ngFor="let linkItem of navItems" [routerLink]="linkItem.link" routerLink="active">
+    {{linkItem.name | titlecase}}
+   </a>
+</mat-nav-list>
